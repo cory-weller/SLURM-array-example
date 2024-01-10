@@ -19,4 +19,4 @@ FASTQ_2="data/${SAMPLE}_R2_001.fastq.gz"
 
 # Do whatever needs to be done with your inputs
 module load bwa
-bwa index ${BWA_INDEX} $ ${FASTQ_1} ${FASTQ_2} > ${SAMPLE}.sam
+bwa mem ${BWA_INDEX} $ ${FASTQ_1} ${FASTQ_2} > ${SAMPLE}.sam
